@@ -1,0 +1,159 @@
+/* Reset básico y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Fondo de la página */
+body {
+  background-color: #1a1a1a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor general */
+.container {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  background-color: #000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Columna izquierda - Registro */
+.contenedor-registro {
+  flex: 1;
+  padding: 40px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-registro h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Caja de entrada */
+.input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #000;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+/* Botón de registro */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #cb3b5b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a02e48;
+}
+
+/* Texto inferior */
+.contenedor-registro p {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0 10px;
+}
+
+/* Iconos sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons i {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons i:hover {
+  background-color: white;
+  color: #000;
+}
+
+/* Columna derecha - Bienvenida */
+.contenedor-bienvenida {
+  flex: 1;
+  background-color: #cb3b5b;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+
+.contenedor-bienvenida h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contenedor-bienvenida p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Botón Iniciar Sesión */
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: black;
+  color: white;
+}
