@@ -4,56 +4,101 @@
   box-sizing: border-box;
 }
 #body {
-  background-color: #0b0e18;
+  background: radial-gradient(circle at 10% 20%, #00ffbf33 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, #00ffd933 0%, transparent 40%), #0b0e18;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .header {
+  height: 20px;
+}
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #040404;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  height: 64px;
+  padding: 0 64px;
 }
 .navbar {
   display: flex;
   position: fixed;
   top: 0%;
+  margin-left: -6px;
   justify-content: flex-end;
   width: 100%;
 }
 .navbar ul {
   display: flex;
   list-style: none;
-  padding: 20px;
-  gap: 48px;
+  padding: 16px;
+  gap: 80px;
+  margin-right: 200px;
 }
 .navbar a {
   display: flex;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .logo {
-  height: 100px;
-  weight: 100px;
-  top: 0%;
-  display: flex;
-  justify-content: space-between;
+  height: 150px;
+  width: auto;
+  margin: 6px 0 0 100px;
 }
+.title {
+  margin-top: 100px;
+}
+
 .contact {
   display: flex;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   padding: 16px;
+  font-size: 46px;
 }
 .caja {
-  display: grid;
   background-color: #141820;
-  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 16px;
+}
+
+.contenido {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.left-column {
+  flex: 1;
   color: white;
 }
-.foto {
-  height: 300px;
-  weight: 300px;
+
+.right-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.contenido {
+
+.foto {
+  height: 400px;
+  width: 400px;
+  border-radius: 8px;
+  margin-right: -80px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
 }
