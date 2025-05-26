@@ -3,47 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro/Login</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Registro e Inicio de Sesión</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <div class="container">
       <!-- Registro -->
-      <div class="contenedor-registro">
-        <h2>Registrate</h2>
-        <form>
-          <div class="input-box">
-            <input type="text" placeholder="Nombre de usuario" />
-            <i class="fa-solid fa-user"></i>
+      <div class="form-section" id="register-form">
+        <h2>Regístrate</h2>
+        <div class="input-group">
+          <input type="text" placeholder="Nombre de usuario" />
+          <span class="icon"><i class="fas fa-user"></i></span>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Email" />
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Contraseña" />
+          <span class="icon"><i class="fas fa-lock"></i></span>
+        </div>
+        <button>Regístrate</button>
+        <div class="social-login">
+          <p>O inicia sesión con plataformas sociales</p>
+          <div class="social-icons">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-google"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
           </div>
-          <div class="input-box">
-            <input type="email" placeholder="Email" />
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="input-box">
-            <input type="password" placeholder="Contraseña" />
-            <i class="fa-solid fa-lock"></i>
-          </div>
-          <button type="submit" class="btn">Registrate</button>
-        </form>
-        <p>O inicie sesión con plataformas sociales</p>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-google"></i>
-          <i class="fa-brands fa-tiktok"></i>
         </div>
       </div>
 
-      <!-- Bienvenida -->
-      <div class="contenedor-bienvenida">
+      <!-- Inicio de Sesión -->
+      <div class="form-section hidden" id="login-form">
+        <h2>Iniciar Sesión</h2>
+        <div class="input-group">
+          <input type="text" placeholder="Nombre de usuario" />
+          <span class="icon"><i class="fas fa-user"></i></span>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Contraseña" />
+          <span class="icon"><i class="fas fa-lock"></i></span>
+        </div>
+        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+        <button class="login">Iniciar Sesión</button>
+        <div class="social-login">
+          <p>O inicia sesión con plataformas sociales</p>
+          <div class="social-icons">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-google"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bienvenida Registro -->
+      <div class="welcome-section" id="welcome-register">
         <h2>¡Bienvenido de nuevo!</h2>
         <p>Ya tengo una cuenta</p>
-        <button class="btn-outline">Iniciar Sesión</button>
+        <button class="toggle-btn" onclick="toggleForm()">
+          Iniciar Sesión
+        </button>
+      </div>
+
+      <!-- Bienvenida Inicio de Sesión -->
+      <div class="welcome-section login hidden" id="welcome-login">
+        <h2>¡Hola, bienvenido!</h2>
+        <p>No tengo en cuenta</p>
+        <button class="toggle-btn" onclick="toggleForm()">Regístrate</button>
       </div>
     </div>
+
+    <script>
+      function toggleForm() {
+        const registerForm = document.getElementById("register-form");
+        const loginForm = document.getElementById("login-form");
+        const welcomeRegister = document.getElementById("welcome-register");
+        const welcomeLogin = document.getElementById("welcome-login");
+
+        registerForm.classList.toggle("hidden");
+        loginForm.classList.toggle("hidden");
+        loginForm.classList.toggle("login");
+        welcomeRegister.classList.toggle("hidden");
+        welcomeLogin.classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
