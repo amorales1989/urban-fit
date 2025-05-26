@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban-Fit</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="contacto.css" />
   </head>
-  <body class="body">
+  <body id="body">
     <div class="header">
+      <img class="logo" src="../../assets/logo.png" alt="logo" />
       <nav class="navbar">
         <ul class="lista">
           <li class=""><a href="index.html">Inicio</a></li>
@@ -19,11 +20,11 @@
       <div class="title">
         <h2 class="contact">Contactanos</h2>
       </div>
-      <div>
-        <img src="../../assets/1.jpg" alt="foto" />
-        <section>
-          <h3 class="text">Lorem ipsum dolor</h3>
-          <h4>
+
+      <section class="caja">
+        <div class="contenido">
+          <h3>Lorem ipsum dolor</h3>
+          <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
             maiores beatae eveniet autem vitae sequi fugit tempora vel id,
             suscipit fugiat corporis tempore ad repellat commodi quisquam itaque
@@ -36,7 +37,8 @@
             Necessitatibus minima voluptas tempora atque explicabo, odio
             obcaecati deleniti culpa ducimus iste eveniet nobis saepe sunt quasi
             doloremque facere consequatur aperiam cumque pariatur?
-          </h4>
+          </p>
+          <img class="foto" src="../../assets/1.jpg" alt="foto" />
           <form action="urbanfit@gmail.com" method="post">
             <label for="nombre">Last name</label><br />
             <input type="text" id="nombre" name="nombre" /><br /><br />
@@ -50,11 +52,9 @@
             <textarea id="mensaje" name="mensaje"></textarea><br /><br />
             <input type="submit" value="Enviar" />
           </form>
-        </section>
-        <footer>
-          <img src="../../assets/logo.png" alt="logo" />
-        </footer>
-      </div>
+        </div>
+      </section>
+      <footer></footer>
     </div>
   </body>
 </html>
