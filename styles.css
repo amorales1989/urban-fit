@@ -129,7 +129,7 @@ header {
   position: relative;
   width: 75%;
   height: 95%;
-  border-radius: 36% 63% 59% 59% / 24% 76% 42% 81%;
+  border-radius: 30% 63% 59% 60% / 23% 73% 42% 81%;
   transform: rotate(-5deg);
   z-index: 1;
   /* Degradado equilibrado - misma cantidad de rosa y verde */
@@ -159,7 +159,7 @@ header {
 .inner-content {
   width: 100%;
   height: 100%;
-  border-radius: 36% 63% 59% 59% / 24% 76% 42% 81%;
+  border-radius: 30% 63% 59% 60% / 23% 73% 42% 81%;
   overflow: hidden;
   display: flex;
   justify-content: center;
