@@ -17,6 +17,53 @@ body {
   position: relative;
 }
 
+/* Header styles */
+.nevegation {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header {
+  background-color: #000000;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 80px;
+  padding: 0px 40px;
+  background-color: #0a0a0a;
+}
+
+.logo img {
+  height: 133px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffae;
+}
+
 .form-section,
 .welcome-section {
   width: 50%;
@@ -38,8 +85,7 @@ body {
 .welcome-section {
   background-color: #e23260;
   color: #000000;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-radius: 100px;
   position: absolute;
   right: 0;
   height: 100%;
@@ -49,10 +95,6 @@ body {
 
 .welcome-section.login {
   background-color: #1dcd9f;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
   right: 50%;
   left: 0;
 }
