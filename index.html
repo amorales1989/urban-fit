@@ -76,5 +76,135 @@
         </div>
       </div>
     </section>
+
+    <!-- Cards Section -->
+    <section class="cards">
+      <h2 class="title">
+        <span class="urban">Urban</span><span class="fit">Fit</span>: todo lo
+        que necesitas para entrar, en un solo lugar
+      </h2>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left-btn">&#10094;</button>
+        <button class="carousel-btn right-btn">&#10095;</button>
+
+        <div class="card-group">
+          <!--tarjeta 1-->
+          <div class="card">
+            <img
+              src="assets/12.png"
+              class="card-img-top"
+              alt="Imagen de sala de Cardio"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sala de cardio</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+
+          <!--tarjeta 2-->
+          <div class="card">
+            <img
+              src="assets/3.jpg"
+              class="card-img-top"
+              alt="Imagen de seccion Fitness"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fitness</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+
+          <!--tarjeta 3-->
+          <div class="card">
+            <img
+              src="assets/10.jpg"
+              class="card-img-top"
+              alt="Imagen de sala de Musculacion"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sala de Musculacion</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+
+          <!--tarjeta 4-->
+          <div class="card">
+            <img
+              src="assets/13.jpg"
+              class="card-img-top"
+              alt="Imagen de sala de Yoga"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Clase de Yoga</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+
+          <!--tarjeta 5-->
+          <div class="card">
+            <img
+              src="assets/14.jpg"
+              class="card-img-top"
+              alt="Imagen de Clase de Boxeo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Clase de boxeo</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+
+          <!--tarjeta 6-->
+          <div class="card">
+            <img
+              src="assets/15.jpg"
+              class="card-img-top"
+              alt="Imagen de Clase de Pilates"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Clase de Pilates</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const leftBtn = document.querySelector(".left-btn");
+      const rightBtn = document.querySelector(".right-btn");
+      const cardGroup = document.querySelector(".card-group");
+
+      leftBtn.addEventListener("click", () => {
+        cardGroup.scrollBy({ left: -320, behavior: "smooth" });
+      });
+
+      rightBtn.addEventListener("click", () => {
+        cardGroup.scrollBy({ left: 320, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
